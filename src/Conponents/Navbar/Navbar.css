@@ -1,0 +1,92 @@
+.navbar{
+    display:flex;
+    height:75px;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #032c20;
+    color: #ffffff;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 200;
+}
+.navLinks{
+    display:flex;
+    /* flex-direction:flex-end; */
+    justify-content:flex-end;
+    align-items: center;
+    list-style:none;
+    width: 75%;
+}
+.home , .orders , .admin , .drafts ,.login{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin:0 10px
+}
+.login{
+    border:1px solid yellow;
+    border-radius: 5px;
+}
+.login:hover{
+    background: gray;
+    border:1px solid white
+}
+
+.mobile-menu-icon{
+    font-size:35px;
+    cursor: pointer;
+    display:none
+}
+
+@media (max-width: 850px){
+    .logo{
+        display:flex;
+        position:absolute;
+         /* top: 15px; */
+        left: 35px;;
+    }
+    .navLinks{
+        display:none;
+    }
+ 
+    .mobile-menu{
+        display:block;
+        position: absolute;
+        background-color: #00b280;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width:100%
+    }
+    .home , .orders , .admin , .drafts ,.login{
+        color:#ffffff;
+        text-align: center;
+        padding: 32px;
+        width:100%;
+        transition: all 0.5s ease;
+
+    }
+    .login{
+        border:none
+    }
+    .login:hover{
+        background: none;
+        border: none;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        color:#ffffff;
+        background:#032c20;
+        border:none;
+        outline: none;
+        /* top: 15px; */
+        right: 25px;
+    }
+}
